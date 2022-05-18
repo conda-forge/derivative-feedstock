@@ -1,5 +1,5 @@
 {% set name = "derivative" %}
-{% set version = "0.4.1" %}
+{% set version = "0.4.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e767ada12125455e3be77fe4118fbb4c57655ac154b944507549223aa8ddf2d7
+  sha256: 97820d1b8ba2c6833f13c569f1ef431a87b2210379b44e280d155b0b9bee40a6
 
 build:
   noarch: python
@@ -21,10 +21,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
     - numpy >=1.18.3
-    - python >=3.6
+    - python >=3.7
     - scikit-learn
     - scipy >=1.4.1
 
