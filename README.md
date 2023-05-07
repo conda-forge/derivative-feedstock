@@ -1,11 +1,11 @@
-About derivative
-================
+About derivative-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/derivative-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/andgoldschmidt/derivative
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/derivative-feedstock/blob/main/LICENSE.txt)
 
 Summary: Numerical differentiation in python.
 
