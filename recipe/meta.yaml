@@ -1,5 +1,5 @@
 {% set name = "derivative" %}
-{% set version = "0.6.1" %}
+{% set version = "0.6.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9c8f7ee4e8f5e8e34dbef74dbe326ff4bda7b38c6ce2f9f01527ac025bc29537
+  sha256: 344285a274bd6023d3c851e3b59ddafafd29db55c61f6119cea3fb1264ec1315
 
 build:
   noarch: python
