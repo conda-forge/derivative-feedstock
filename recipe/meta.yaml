@@ -6,12 +6,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 72e7fd56e92665f939b5449c4b9ceea88fdf02eda7378cf0a3e961ab0df58181
 
 build:
   noarch: python
-  number: 0
+  number: 1
   # This package does not have a setup.py in the github repository but one is
   # generated in the tarball. The pyproject.toml file doesn't let a normal
   # setup.py installation work, so remove it.
@@ -22,15 +22,17 @@ requirements:
   host:
     - pip
     - setuptools
-    - python >=3.9
+    - python {{ python_min }}
   run:
     - numpy >=1.18.3
-    - python >=3.9
+    - python >={{ python_min }}
     - scikit-learn >=1.0.0
     - scipy >=1.4.1
     - importlib-metadata >=7.1.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - derivative
 
